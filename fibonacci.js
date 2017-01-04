@@ -18,6 +18,17 @@ get(2);
 get(3);
 get(4);
 
+//-----------------------recursive process-------------
+
+function get(n){
+	var p1 = 0, p2 = 1;
+
+	if(n == 1) return p1;
+	else if(n == 2) return p2;
+
+	return get(n-2) + get(n-1);
+}
+
 /*------------get nth fibonacci no------------*/
 
 
