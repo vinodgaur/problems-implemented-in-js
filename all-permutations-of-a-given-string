@@ -17,5 +17,5 @@ function swap(str,a,b){
 	return str.join("");
 }
 
-var str="ABCD"; //try with "ABC"
+var str="ABC"; //try with "ABCD" and other string
 permute(str, 0, str.length-1);
