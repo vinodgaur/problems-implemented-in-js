@@ -1,0 +1,21 @@
+function permute(str,l,r){
+	if(l==r){
+		console.log(str);
+	}else{
+		for(var i=l;i<=r;i++){
+			var s=swap(str,l,i);
+			permute(s,l+1,r);
+		}
+	}
+}
+
+function swap(str,a,b){
+	str=str.split("");
+	var t=str[a];
+	str[a]=str[b];
+	str[b]=t;
+	return str.join("");
+}
+
+var str="ABCD"; //try with "ABC"
+permute(str, 0, str.length-1);
