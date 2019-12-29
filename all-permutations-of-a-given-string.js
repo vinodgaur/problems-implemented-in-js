@@ -1,3 +1,8 @@
+/*How to run
+copy paste below code in console of developer tool(chrome or any)
+*/
+
+/*code*/
 function permute(str,l,r){
 	if(l==r){
 		console.log(str);
